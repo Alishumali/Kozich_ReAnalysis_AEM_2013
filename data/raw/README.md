@@ -1,6 +1,6 @@
 ## Readme file
-
 ## the following code is to download the manuscript's raw **fastq.gz**  
+
 *from the official mothur website - https://mothur.org/MiSeqDevelopmentData.html
 * compressed files will be unpacked and then .zip/.tar will be removed
 

@@ -1,4 +1,5 @@
-# Readme file for the process of obtaining Mothur's latest version from the mothur github repo
+# Readme file for the process of obtaining Mothur's latest version from the mothur github repository
+
 ## downloading mothur linux latest version to run with AWS EC2 machine via Bash
 
 ``` bash 

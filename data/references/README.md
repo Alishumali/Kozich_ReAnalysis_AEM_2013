@@ -1,6 +1,6 @@
 # downloading Silva, RDP files used in the manuscript
-
 ## files as directed to be obtained from mothur website
+
 ## RDP taxanomy
 ```bash
 wget https://mothur.org/w/images/8/88/Trainset14_032015.pds.tgz
