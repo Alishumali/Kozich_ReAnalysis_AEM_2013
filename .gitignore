@@ -1,8 +1,12 @@
+#made changes to list of ignored files
+
 .Rproj.user
 .Rhistory
 .RData
 
 .DS_Store
+
+code/mothur/*/*
 
 data/*/*
 !data/process/*
