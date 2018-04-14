@@ -6,7 +6,7 @@
 
 .DS_Store
 
-code/mothur/*/*
+code/mothur/*
 
 data/*/*
 !data/process/*
