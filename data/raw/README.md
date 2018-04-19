@@ -6,8 +6,6 @@
 
 ```bash
 wget https://mothur.org/MiSeqDevelopmentData/StabilityWMetaG.tar
-tar xvf StabilityWMetaG.tar
-ls
-mv *.gz data/raw/
+tar xvf StabilityWMetaG.tar -C data/raw/
 rm StabilityWMetaG.tar
 ```
