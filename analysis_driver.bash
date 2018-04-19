@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 
 # Download the raw data and put them into the data/raw directory
 wget --no-check-certificate https://www.mothur.org/MiSeqDevelopmentData/StabilityWMetaG.tar
@@ -23,6 +23,3 @@ rm -rf trainset14_032015.pds
 rm Trainset14_032015.pds.tgz
 
 
-# Generate a customized version of the SILVA reference database that targets the V4 region
-code/mothur/mothur "#pcr.seqs(fasta=data/references/silva.seed.align, start=11894, end=25319, keepdots=F, processors=8)"
-mv data/references/silva.seed.pcr.align data/references/silva.v4.align
