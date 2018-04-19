@@ -36,3 +36,13 @@ mv data/references/silva.seed.pcr.align data/references/silva.v4.align
 # Run mothur through the various quality control steps
 code/mothur/mothur code/get_good_seqs.batch
 
+# Run mock community data through mothur to calculate the sequencing error rates
+code/mothur/mothur code/get_error.batch
+
+# Run mock community data through mothur to get the shared file
+code/mothur/mothur code/get_shared_otus.batch
+
+# Generate nmds axes file for plotting from shared file
+code/mothur/mothur code/get_nmds_data.batch
+
+
