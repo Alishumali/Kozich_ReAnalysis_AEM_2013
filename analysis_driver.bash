@@ -22,4 +22,17 @@ mv trainset14_032015.pds/train* data/references/
 rm -rf trainset14_032015.pds
 rm Trainset14_032015.pds.tgz
 
+# Generate HMP_MOCK.v4.fasta - an unaligned fasta sequence file that contains the V4 region of
+# the sequences in the mock community
+wget --no-check-certificate https://www.mothur.org/MiSeqDevelopmentData/HMP_MOCK.fasta
+mv HMP_MOCK.fasta data/references
+code/mothur/mothur "#align.seqs(fasta=data/references/HMP_MOCK.fasta, reference=data/references/silva.v4.align);degap.seqs()"
+mv data/references/HMP_MOCK.ng.fasta data/references/HMP_MOCK.v4.fasta
+
+# Generate a customized version of the SILVA reference database that targets the V4 region
+code/mothur/mothur "#pcr.seqs(fasta=data/references/silva.seed.align, start=11894, end=25319, keepdots=F, processors=8)"
+mv data/references/silva.seed.pcr.align data/references/silva.v4.align
+
+# Run mothur through the various quality control steps
+code/mothur/mothur code/get_good_seqs.batch
 
