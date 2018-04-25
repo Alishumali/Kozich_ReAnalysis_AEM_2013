@@ -1,7 +1,8 @@
 # Download the raw data and put them into the data/raw directory
 
 wget --no-check-certificate https://www.mothur.org/MiSeqDevelopmentData/StabilityWMetaG.tar
-tar xvf StabilityWMetaG.tar -C data/raw/
+tar xvf StabilityWMetaG.tar 
+mv *.gz data/raw/
 rm StabilityWMetaG.tar
 
 # Download the SILVA reference file (v123). We will pull out the bacteria-specific sequences and
